@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    .cont {
+      position: relative;
+      border: 30px;
+      width: 360px;
+      height: 27rem;
+      background-color: rgba(84, 129, 225, 0.523);
+      margin-top: 100px;
+      left: 580px;
+      border-radius: 7px;
+      color: rgba(19, 22, 24, 0.87);
+      box-shadow: 0 4px 8px 0 rgba(84, 129, 225, 0.979);
+    }
+
+    * {
+      margin: 0;
+      border: 0;
+    }
+
+    body {
+      position: relative;
+      text-decoration: none; 
+      margin: 0;
+      padding: 0px;
+      border: 0px;
+      background-image: linear-gradient(rgba(0, 0, 50, 0.836), rgba(0, 0, 50, 0.836)), url("/static/background_image.png");
+      height: 99vh;
+      width: 100%;
+    }
+
+    .btn {
+      background-color: #66c269de;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button:hover {
+  background-color: rgb(75, 189, 53);
+}
+
+    .txt {
+      font-size: 2rem;
+      border-radius: 3px;
+      margin-left: 1rem;
+
+    }
+
+    input {
+      border-radius: 3px;
+      width: 85%;
+      border: 0;
+      outline: 0;
+      padding: 18px 15px;
+    }
+
+    .btnalign {
+      margin-left: 3rem;
+    }
+    h1 {
+            color: rgba(244, 238, 238, 0.913);
+            font-size: 2rem;
+            text-align: center;
+        }
+  </style>
+</head>
+
+<body>
+        <h1>VEHICLE DETECTION & TRAFFIC HEALTH METER</h1>
+    
+  <div class="cont">
+    <form action="/login" method="post">
+      <h1>LogIn</h1><br><br>
+      <div class="txt">
+        <label for="uname"><b>Username</b></label><br>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <br><br>
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <br><br>
+        <div class="btnalign">
+          <button class="btn" type="submit">Login</button>
+          <button class="btn" type="button" class="cancelbtn">Cancel</button><br><br>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>
